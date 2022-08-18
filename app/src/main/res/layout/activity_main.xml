@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_blue_dark">
+
+    <!-- Фоновое изображение -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:alpha="0.7"/>
+
+    <!-- Макет с заголовком и кнопками -->
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@android:style/TextAppearance.Material.Display2"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/button_catalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_catalog_text"
+            android:drawableTop="@drawable/ic_car_white_48dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/button_test_drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_test_drive_text"
+            android:drawableTop="@drawable/ic_steering_white_48dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/button_promotions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_promotions_text"
+            android:drawableTop="@drawable/ic_brightness_percent_white_48dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="32dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
